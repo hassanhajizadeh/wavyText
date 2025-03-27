@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background : white
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    font-size: 20pt;
+    color: #1e1e1e;
+    padding: 100px;
+}
+
+.container span{
+    animation: span_animation .3s ;
+    margin: 0px 3px;
+    text-transform: uppercase;
+}
+
+
+@keyframes span_animation {
+    0% , 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+        color: crimson;
+    }
+}
